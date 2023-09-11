@@ -36,6 +36,48 @@
                     <li><a class="address-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+
+            <ul class="header-social-list">
+
+                <li class="header-social-item">
+                    <a class="header-social-link" href="">
+                        <svg width="16" height="16" class="header-social-icon" aria-label="instagram icon">
+                            <use href="./images/icons.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="header-social-item">
+                    <a class="header-social-link" href="">
+                        <svg width="16" height="16" class="header-social-icon" aria-label="twitter icon">
+                            <use href="./images/icons.svg#twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="header-social-item">
+                    <a class="header-social-link" href="">
+                        <svg width="16" height="16" class="header-social-icon" aria-label="facebook icon">
+                            <use href="./images/icons.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="header-social-item">
+                    <a class="header-social-link" href="">
+                        <svg width="16" height="16" class="header-social-icon" aria-label="linkedin icon">
+                            <use href="./images/icons.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+
+            </ul>
+
+            <button class="hero-burger-btn" type="button">
+                <svg class="hero-burger-icon" width="24" height="24" aria-label="burger-button-icon">
+                    <use href="./images/icons.svg#burger-btn"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -118,10 +160,13 @@
                 <ul class="team-list">
 
                     <li class="team-item">
-                        <img class="team-img" src="./images/team/mark.jpg" alt="mark" width="264" height="260">
+                        <img class="team-img" src="./images/team/mark.jpg"
+                            srcset="./images/team/mark.jpg 1x, ./images/team/mark@2x.jpg 2x" alt="mark" width="264"
+                            height="260">
                         <div class="team-item-container">
                             <h3 class="team-subtitle">Mark Guerrero</h3>
                             <p class="team-text">Product Designer</p>
+
                             <ul class="team-social-list">
 
                                 <li class="team-social-item">
@@ -162,7 +207,9 @@
                     </li>
 
                     <li class="team-item">
-                        <img class="team-img" src="./images/team/tom.jpg" alt="tom" width="264" height="260">
+                        <img class="team-img" src="./images/team/tom.jpg"
+                            srcset="./images/team/tom.jpg 1x, ./images/team/tom@2x.jpg 2x" alt="tom" width="264"
+                            height="260">
                         <div class="team-item-container">
                             <h3 class="team-subtitle">Tom Ford</h3>
                             <p class="team-text">Frontend Developer</p>
@@ -205,7 +252,9 @@
                     </li>
 
                     <li class="team-item">
-                        <img class="team-img" src="./images/team/camila.jpg" alt="camila" width="264" height="260">
+                        <img class="team-img" src="./images/team/camila.jpg"
+                            srcset="./images/team/camila.jpg 1x, ./images/team/camila@2x.jpg 2x" alt="camila"
+                            width="264" height="260">
                         <div class="team-item-container">
                             <h3 class="team-subtitle">Camila Garcia</h3>
                             <p class="team-text">Marketing</p>
@@ -249,7 +298,9 @@
                     </li>
 
                     <li class="team-item">
-                        <img class="team-img" src="./images/team/daniel.jpg" alt="daniel" width="264" height="260">
+                        <img class="team-img" src="./images/team/daniel.jpg"
+                            srcset="./images/team/daniel.jpg 1x, ./images/team/daniel@2x.jpg 2x" alt="daniel"
+                            width="264" height="260">
                         <div class="team-item-container">
                             <h3 class="team-subtitle">Daniel Wilson</h3>
                             <p class="team-text">UI Designer</p>
@@ -491,7 +542,7 @@
         </div>
     </footer>
 
-    <div class="backface">
+    <div class="backface is-hidden">
 
         <div class="modal">
 
@@ -552,8 +603,10 @@
                             <svg class="modal-checkbox-icon" width="10" height="8" aria-label="check mark">
                                 <use href="./images/icons.svg#check-mark"></use>
                             </svg>
-                        </span>I accept the terms and conditions of the <a class="modal-link" href=""
-                            target="_blank">Privacy Policy</a></label>
+                        </span>
+                        <p>I accept the terms and conditions of the <a class="modal-link" href=""
+                                target="_blank">Privacy Policy</a></p>
+                    </label>
                 </div>
 
                 <button class="modal-submit-btn" type="submit">Send</button>
