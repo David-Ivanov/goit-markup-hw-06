@@ -80,7 +80,7 @@ button {
 }
 
 
-@media (min-width: 768px) and (max-width: 1158px) {
+@media (min-width: 768px) {
     .container {
         max-width: 736px;
     }
@@ -95,10 +95,18 @@ button {
 /* header */
 
 .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     border-bottom: 1px solid #E7E9FC;
 
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 0;
+    }
 }
 
 .header-container {
@@ -106,8 +114,22 @@ button {
     justify-content: space-between;
     align-items: center;
 
+    max-width: 100%;
+
     margin: 0 auto;
     padding: 0 15px 0 15px;
+}
+
+@media (min-width: 768px) {
+    .header-container {
+        max-width: 736px;
+    }
+}
+
+@media (min-width: 1158px) {
+    .header-container {
+        max-width: 1158px;
+    }
 }
 
 /* logo */
@@ -330,6 +352,8 @@ button {
     left: 0;
     top: 0;
 
+    z-index: 99;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -365,6 +389,22 @@ button {
 }
 
 /* header buttons */
+
+.header-burger-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+
+    width: 24px;
+    height: 24px;
+
+    border: none;
+
+    background-color: transparent;
+}
+
 
 .header-close-btn {
     position: absolute;
@@ -421,7 +461,7 @@ button {
     padding-bottom: 72px;
 
     background-color: var(--navy-blue-color);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/hero-bg.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/hero-bg-mobile-tablet.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -429,7 +469,7 @@ button {
 
 @media (min-resolution: 192dpi) {
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/hero-bg@2x.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/hero-bg-mobile-tablet@2x.jpg);
     }
 
 }
@@ -445,6 +485,15 @@ button {
     .hero {
         padding-top: 188px;
         padding-bottom: 188px;
+
+        background-position: center center;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/hero-bg-desktop.jpg);
+    }
+}
+
+@media (min-width: 1158px) and (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/hero-bg-desktop@2x.jpg);
     }
 }
 
@@ -1144,6 +1193,8 @@ button {
     position: fixed;
     left: 0;
     top: 0;
+
+    z-index: 999;
 
     width: 100%;
     height: 100%;
